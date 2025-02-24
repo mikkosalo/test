@@ -1,0 +1,4 @@
+name: test_app
+description: Test App
+publish_to: "none"
+version: 0.0.1

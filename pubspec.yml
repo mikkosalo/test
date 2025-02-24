@@ -1,0 +1,4 @@
+name: piilo_app
+description: Piilo Accounting App
+publish_to: "none"
+version: 1.8.0+24

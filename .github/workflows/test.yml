@@ -1,0 +1,18 @@
+name: Build Flutter iOS App
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Näytä versio- ja build-numero
+        run: |
+          echo "Versionumero: ${{ github.event.release.tag_name }}"
+          echo "Build-numero: ${{ github.run_number }}"
